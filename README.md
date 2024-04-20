@@ -10,6 +10,7 @@ Spanish: Si quieres crear tus propios bontones, necesitas que los botones se lla
 Inglish: If you want to create your own buttons, you need the buttons to be named "Button106FirstInteract" and another "Button106SecondInteract"
 
 Button106FirstInteract = the person who is going to sacrifice
+
 Button106SecondInteract = Kill the scp 106
 
 
