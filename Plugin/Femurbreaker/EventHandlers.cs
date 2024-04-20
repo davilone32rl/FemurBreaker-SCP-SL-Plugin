@@ -19,6 +19,7 @@
     using PluginAPI.Events;
     using Exiled.API.Extensions;
     using Exiled.Events.EventArgs.Server;
+    using SCPSLAudioApi;
 
     public class EventHandlers
     {
@@ -33,12 +34,12 @@
                 if (playerAlive == 0)
                 {
                     playerAlive = 1;
-                    ev.Player.Kill("Eres un héroe", "A player sacrificed himself for the recontainment of scp 106");
+                    ev.Player.Kill(plugin.Config.OnSacrificeDeathReason, "A player sacrificed himself for the recontainment of scp 106");
                     return;
                 }
                 else
                 {
-                    ev.Player.Broadcast(new("¡Ya se murió uno!", 5));
+                    ev.Player.Broadcast(new(plugin.Config.OnRequerimentsComplete, 5));
                 }
             }
 
@@ -50,20 +51,19 @@
                     {
                         // Falla la retención
                         playerAlive = 0;
-                        ev.Player.Broadcast(new("¡Ha fallado la retención del SCP 106!", 5));                    
+                        ev.Player.Broadcast(new(plugin.Config.OnFailure, 5));                    
                     }
                     else
                     {
                         // Retención exitosa
                         playerAlive = 3;
-                        ev.Player.Broadcast(new("¡SCP 106 se recontuvo con éxito!", 5));
+                        ev.Player.Broadcast(new(plugin.Config.OnDeath, 5));
                         List<Player> scp106 = Player.List.Where(p => p.Role == RoleTypeId.Scp106).ToList();
                         if (scp106 != null)
                         {
-                            foreach (Player player in scp106) { player.Kill("Recontenido", "SCP-106 successfully terminated. Termination cause Recontainment"); }
-                                
+                            foreach (Player player in scp106) { player.Kill(plugin.Config.OnRecontainmentDeath, "SCP-106 successfully terminated. Termination cause Recontainment"); }
+                            
                         }
-                        
                     }
                     
                 }
@@ -72,11 +72,11 @@
                     // El jugador no ha interactuado con el primer botón
                     if (playerAlive == 3)
                     {
-                        ev.Player.Broadcast(new("¡Ya se murio el viejo choto!", 5));
+                        ev.Player.Broadcast(new(plugin.Config.OnRecontainmentRepeat, 5));
                     }
                     else
                     {
-                        ev.Player.Broadcast(new("¡Falta que alguien se sacrifique!", 5));
+                        ev.Player.Broadcast(new(plugin.Config.OnRequirements, 5));
                     }  
                 }
             }
