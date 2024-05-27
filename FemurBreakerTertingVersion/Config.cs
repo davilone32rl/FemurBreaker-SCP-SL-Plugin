@@ -25,5 +25,9 @@
         public string OnSacrificeDeathReason { get; set; } = "!Eres un heroe¡";
         [Description("Bot name")]
         public string OnNameBot { get; set; } = "C.A.S.S.I.E";
+        [Description("If you want the femurbreaker sound activate this")]
+        public bool npc { get; set; } = true;
+        [Description("seconds of audio")]
+        public float seconds { get; set; } = 33f;
     }
 }

@@ -9,6 +9,9 @@
     using System.Linq;
     using Exiled.Events.EventArgs.Server;
     using SCPSLAudioApi.AudioCore;
+    using System.Net.Http.Headers;
+    using System.Threading;
+    using MEC;
 
     public class EventHandlers
     {
@@ -44,7 +47,7 @@
                         if (scp106 != null)
                         {
                             foreach (Player player in scp106) { player.Kill(plugin.Config.OnRecontainmentDeath, "SCP-106 successfully terminated. Termination cause Recontainment"); }
-                            Extension();
+                            Extension(plugin.Config.npc);
                         }
                     }
 
@@ -64,15 +67,27 @@
             }
         }
         
-        public void Extension()
+        public void Extension(bool YT)
         {
-            var path = System.IO.Path.Combine(Paths.Plugins, "Audio", "FemurSound.ogg");
-            var npc = Npc.Spawn(plugin.Config.OnNameBot, RoleTypeId.Overwatch);
-            npc.RemoteAdminPermissions = PlayerPermissions.AFKImmunity;
-            var audio = AudioPlayerBase.Get(npc.ReferenceHub);
-            audio.BroadcastChannel = VoiceChat.VoiceChatChannel.Intercom;
-            audio.AudioToPlay.Add(path);
-            audio.Play(0);
+            if (YT)
+            {
+                var path = System.IO.Path.Combine(Paths.Plugins, "Audio", "FemurSound.ogg");
+                var npc = Npc.Spawn(plugin.Config.OnNameBot, RoleTypeId.Overwatch);
+                npc.RemoteAdminPermissions = PlayerPermissions.AFKImmunity;
+                var audio = AudioPlayerBase.Get(npc.ReferenceHub);
+                audio.BroadcastChannel = VoiceChat.VoiceChatChannel.Intercom;
+                audio.AudioToPlay.Add(path);
+                audio.Play(0);
+                Timing.CallDelayed(plugin.Config.seconds, () =>
+                {
+                    npc.Destroy();
+                });
+            }
+            else
+            {
+                return;
+            }
+
         }
 
         public void OnRestart(RoundEndedEventArgs ev)

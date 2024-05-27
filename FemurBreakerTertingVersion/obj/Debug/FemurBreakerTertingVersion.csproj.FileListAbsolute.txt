@@ -1,6 +1,5 @@
 C:\Users\david\source\repos\FemurBreakerTertingVersion\FemurBreakerTertingVersion\bin\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\david\source\repos\FemurBreakerTertingVersion\FemurBreakerTertingVersion\bin\Debug\Assembly-CSharp.dll
-C:\Users\david\source\repos\FemurBreakerTertingVersion\FemurBreakerTertingVersion\bin\Debug\AudioPlayer.dll
 C:\Users\david\source\repos\FemurBreakerTertingVersion\FemurBreakerTertingVersion\bin\Debug\CommandSystem.Core.dll
 C:\Users\david\source\repos\FemurBreakerTertingVersion\FemurBreakerTertingVersion\bin\Debug\Exiled.API.dll
 C:\Users\david\source\repos\FemurBreakerTertingVersion\FemurBreakerTertingVersion\bin\Debug\Exiled.Events.dll

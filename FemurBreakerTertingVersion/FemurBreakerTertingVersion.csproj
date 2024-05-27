@@ -37,9 +37,6 @@
     <Reference Include="Assembly-CSharp-firstpass">
       <HintPath>..\..\..\..\Desktop\Plugin\ThirdParty\SCPSL\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
-    <Reference Include="AudioPlayer">
-      <HintPath>..\..\..\..\Desktop\Plugin\ThirdParty\Other\AudioPlayer.dll</HintPath>
-    </Reference>
     <Reference Include="CommandSystem.Core">
       <HintPath>..\..\..\..\Desktop\Plugin\ThirdParty\SCPSL\CommandSystem.Core.dll</HintPath>
     </Reference>
