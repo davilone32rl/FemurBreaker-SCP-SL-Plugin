@@ -9,3 +9,5 @@ Inglish: If you want to create your own buttons, you need the buttons to be name
 
 
 ![image](https://github.com/TheNewR00t/FemurBreaker-SCP-SL-Plugin/assets/126024362/1e08bafb-6c6d-4b68-8700-208f55c04d27)
+![eweuhb9kqei61-min](https://github.com/TheNewR00t/FemurBreaker-SCP-SL-Plugin/assets/126024362/87373521-4486-47eb-ab0e-61712c575969)
+
