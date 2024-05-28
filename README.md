@@ -6,3 +6,6 @@ Spanish: Si quieres crear tus propios bontones, necesitas que los botones se lla
 
 
 Inglish: If you want to create your own buttons, you need the buttons to be named "Button106F"
+
+
+![image](https://github.com/TheNewR00t/FemurBreaker-SCP-SL-Plugin/assets/126024362/1e08bafb-6c6d-4b68-8700-208f55c04d27)
