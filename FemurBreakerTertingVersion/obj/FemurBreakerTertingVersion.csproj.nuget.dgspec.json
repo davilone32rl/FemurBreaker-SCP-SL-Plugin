@@ -50,6 +50,10 @@
         "net481": {
           "targetAlias": "net481",
           "dependencies": {
+            "EXILED": {
+              "target": "Package",
+              "version": "[8.9.2, )"
+            },
             "Microsoft.CSharp": {
               "target": "Package",
               "version": "[4.7.0, )"

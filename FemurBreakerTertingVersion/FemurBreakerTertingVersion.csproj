@@ -16,18 +16,6 @@
     <Reference Include="CommandSystem.Core">
       <HintPath>..\..\..\..\Desktop\Plugin\ThirdParty\SCPSL\CommandSystem.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.API">
-      <HintPath>..\..\..\..\Desktop\Plugin\ThirdParty\Exiled\Exiled.API.dll</HintPath>
-    </Reference>
-    <Reference Include="Exiled.Events">
-      <HintPath>..\..\..\..\Desktop\Plugin\ThirdParty\Exiled\Exiled.Events.dll</HintPath>
-    </Reference>
-    <Reference Include="Exiled.Loader">
-      <HintPath>..\..\..\..\Desktop\Plugin\ThirdParty\Exiled\Exiled.Loader.dll</HintPath>
-    </Reference>
-    <Reference Include="Exiled.Permissions">
-      <HintPath>..\..\..\..\Desktop\Plugin\ThirdParty\Exiled\Exiled.Permissions.dll</HintPath>
-    </Reference>
     <Reference Include="MapEditorReborn">
       <HintPath>..\..\..\..\Desktop\Plugin\ThirdParty\Other\MapEditorReborn.dll</HintPath>
     </Reference>
@@ -54,6 +42,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="EXILED" Version="8.9.2" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
