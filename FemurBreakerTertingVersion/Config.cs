@@ -2,6 +2,8 @@
 {
     using System.ComponentModel;
     using Exiled.API.Interfaces;
+    using UnityEngine;
+    using Waits;
 
     public class Config : IConfig
     {
@@ -29,5 +31,11 @@
         public bool npc { get; set; } = true;
         [Description("seconds of audio")]
         public float seconds { get; set; } = 33f;
+        [Description("Activate this if you want a cassie to say when someone sacrifices")]
+        public bool CassieWithSacrificie { get; set; } = true;
+        [Description("Sound or not sound")]
+        public bool SoundOrNotsound { get; set; } = true;
+        [Description("Sound or not sound")]
+        public string Cassie { get; set; } = "SCP 1 0 6 HAS BEEN SUCCEFULY RECOTIANETD BY FEMUR BREAKER";
     }
 }

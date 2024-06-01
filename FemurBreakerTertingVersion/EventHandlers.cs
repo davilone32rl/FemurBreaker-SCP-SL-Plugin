@@ -26,7 +26,15 @@
                 if (playerAlive == 0)
                 {
                     playerAlive = 1;
-                    ev.Player.Kill(plugin.Config.OnSacrificeDeathReason, "A player sacrificed himself for the recontainment of scp 106");
+                    if (plugin.Config.CassieWithSacrificie)
+                    {
+                        ev.Player.Kill(plugin.Config.OnSacrificeDeathReason, "A player sacrificed himself for the recontainment of scp 106");
+                    }
+                    else
+                    {
+                        ev.Player.Kill(plugin.Config.OnSacrificeDeathReason);
+                    }
+                    
                     return;
                 }
 
@@ -69,25 +77,31 @@
         
         public void Extension(bool YT)
         {
-            if (YT)
+            if (plugin.Config.SoundOrNotsound) 
             {
-                var path = System.IO.Path.Combine(Paths.Plugins, "Audio", "FemurSound.ogg");
-                var npc = Npc.Spawn(plugin.Config.OnNameBot, RoleTypeId.Overwatch);
-                npc.RemoteAdminPermissions = PlayerPermissions.AFKImmunity;
-                var audio = AudioPlayerBase.Get(npc.ReferenceHub);
-                audio.BroadcastChannel = VoiceChat.VoiceChatChannel.Intercom;
-                audio.AudioToPlay.Add(path);
-                audio.Play(0);
-                Timing.CallDelayed(plugin.Config.seconds, () =>
+                if (YT)
                 {
-                    npc.Destroy();
-                });
+                    var path = System.IO.Path.Combine(Paths.Plugins, "Audio", "FemurSound.ogg");
+                    var npc = Npc.Spawn(plugin.Config.OnNameBot, RoleTypeId.Overwatch);
+                    npc.RemoteAdminPermissions = PlayerPermissions.AFKImmunity;
+                    var audio = AudioPlayerBase.Get(npc.ReferenceHub);
+                    audio.BroadcastChannel = VoiceChat.VoiceChatChannel.Intercom;
+                    audio.AudioToPlay.Add(path);
+                    audio.Play(0);
+                    Timing.CallDelayed(plugin.Config.seconds, () =>
+                    {
+                        npc.Destroy();
+                    });
+                }
+                else
+                {
+                    return;
+                }
             }
             else
             {
-                return;
+                Cassie.Message("SCP 1 0 6 HAS BEEN SUCCEFULY RECOTIANETD BY FEMUR BREAKER!");
             }
-
         }
 
         public void OnRestart(RoundEndedEventArgs ev)

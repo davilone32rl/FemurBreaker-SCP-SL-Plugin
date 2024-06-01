@@ -1,27 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\david\\source\\repos\\FemurBreakerTertingVersion\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2B74FF-F0AB-4927-B3FF-5B693CA47C6E}|FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj|C:\\Users\\david\\source\\repos\\FemurBreakerTertingVersion\\femurbreakertertingversion\\plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2B74FF-F0AB-4927-B3FF-5B693CA47C6E}|FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj|solutionrelative:femurbreakertertingversion\\plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2B74FF-F0AB-4927-B3FF-5B693CA47C6E}|FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj|C:\\Users\\david\\source\\repos\\FemurBreakerTertingVersion\\femurbreakertertingversion\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2B74FF-F0AB-4927-B3FF-5B693CA47C6E}|FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj|solutionrelative:femurbreakertertingversion\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2B74FF-F0AB-4927-B3FF-5B693CA47C6E}|FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj|c:\\users\\david\\source\\repos\\femurbreakertertingversion\\femurbreakertertingversion\\eventhandlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2B74FF-F0AB-4927-B3FF-5B693CA47C6E}|FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj|solutionrelative:femurbreakertertingversion\\eventhandlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B2B74FF-F0AB-4927-B3FF-5B693CA47C6E}|FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj|C:\\Users\\david\\source\\repos\\FemurBreakerTertingVersion\\femurbreakertertingversion\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B2B74FF-F0AB-4927-B3FF-5B693CA47C6E}|FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj|solutionrelative:femurbreakertertingversion\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|FemurBreakerTertingVersion||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -29,70 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Plugin.cs",
-              "DocumentMoniker": "C:\\Users\\david\\source\\repos\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion\\Plugin.cs",
-              "RelativeDocumentMoniker": "FemurBreakerTertingVersion\\Plugin.cs",
-              "ToolTip": "C:\\Users\\david\\source\\repos\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion\\Plugin.cs",
-              "RelativeToolTip": "FemurBreakerTertingVersion\\Plugin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T19:19:40.688Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Config.cs",
-              "DocumentMoniker": "C:\\Users\\david\\source\\repos\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion\\Config.cs",
-              "RelativeDocumentMoniker": "FemurBreakerTertingVersion\\Config.cs",
-              "ToolTip": "C:\\Users\\david\\source\\repos\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion\\Config.cs",
-              "RelativeToolTip": "FemurBreakerTertingVersion\\Config.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T19:21:36.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\david\\source\\repos\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion\\Properties\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "FemurBreakerTertingVersion\\Properties\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\david\\source\\repos\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion\\Properties\\AssemblyInfo.cs",
-              "RelativeToolTip": "FemurBreakerTertingVersion\\Properties\\AssemblyInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T21:43:22.99Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FemurBreakerTertingVersion",
-              "DocumentMoniker": "C:\\Users\\david\\source\\repos\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj",
-              "RelativeDocumentMoniker": "FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj",
-              "ToolTip": "C:\\Users\\david\\source\\repos\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj",
-              "RelativeToolTip": "FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-24T21:43:21.976Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EventHandlers.cs",
-              "DocumentMoniker": "C:\\Users\\david\\source\\repos\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion\\EventHandlers.cs",
-              "RelativeDocumentMoniker": "FemurBreakerTertingVersion\\EventHandlers.cs",
-              "ToolTip": "C:\\Users\\david\\source\\repos\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion\\EventHandlers.cs",
-              "RelativeToolTip": "FemurBreakerTertingVersion\\EventHandlers.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T19:22:51.454Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
             }
           ]
         }
