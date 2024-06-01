@@ -10,19 +10,19 @@
         [Description("How many percent do you want the femurbreaker to get right?")]
         public float porcent { get; set; } = 25;
         [Description("Onfailure")]
-        public string OnFailure { get; set; } = "!La recontencion del scp 106 a fallado¡ Busca a otra persona para la recontencion";
+        public string OnFailure { get; set; } = "!The recontainment of scp 106 has failed! Find another person for recontainment¡";
         [Description("OnDeath")]
-        public string OnDeath { get; set; } = "!El scp 106 se recontuvo con exito¡";
+        public string OnDeath { get; set; } = "SCP-106 has been successfully recontained!";
         [Description("OnRecontainmentDeath")]
-        public string OnRecontainmentDeath { get; set; } = "Recontenido";
+        public string OnRecontainmentDeath { get; set; } = "recontained!";
         [Description("OnRecontainmentRepeat")]
-        public string OnRecontainmentRepeat { get; set; } = "!Ya se recontuvo el viejo choto¡";
+        public string OnRecontainmentRepeat { get; set; } = "The old bastard has been recontained!";
         [Description("OnRequirements")]
-        public string OnRequirements { get; set; } = "!Falta que alguien se sacrifique¡";
+        public string OnRequirements { get; set; } = "Someone still needs to sacrifice themselves!";
         [Description("OnRequerimentsComplete")]
-        public string OnRequerimentsComplete { get; set; } = "!Ya se sacrifico uno¡";
+        public string OnRequerimentsComplete { get; set; } = "One has already sacrificed themselves!";
         [Description("OnSacrificeDeathReason")]
-        public string OnSacrificeDeathReason { get; set; } = "!Eres un heroe¡";
+        public string OnSacrificeDeathReason { get; set; } = "You're a hero!";
         [Description("Bot name")]
         public string OnNameBot { get; set; } = "C.A.S.S.I.E";
         [Description("If you want the femurbreaker sound activate this")]
