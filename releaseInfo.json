@@ -1,0 +1,11 @@
+{
+  "displayname": "FemurBreaker",
+  "description": "This plugin brings back the femurbreaker",
+  "authorName": "TheNewR00t",
+  "buildType": 0,
+  "version": "1.1.7",
+  "scpslVersion": "13.4.2",
+  "loaderType": "exiled",
+  "gameAssemblyReferences": "Mirror.dll,PluginAPI.dll,Assembly-CSharp.dll,UnityEngine.CoreModule.dll,UnityEngine.PhysicsModule.dll",
+  "publicizeAssemblies": "Assembly-CSharp.dll"
+}
