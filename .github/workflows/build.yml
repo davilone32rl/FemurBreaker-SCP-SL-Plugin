@@ -2,7 +2,7 @@ name: Build Release
 on: 
   workflow_dispatch:
 env:
-  NET_FRAMEWORK_VERSION: "net48"
+  NET_FRAMEWORK_VERSION: "net481"
   PROJECT_NAME: "/FemurBreaker-SCP-SL-Plugin"
   ASSEMBLY_NAME: "FemurBreaker-SCP-SL-Plugin"
   SL_REFERENCES: "${{ github.workspace }}/References"
