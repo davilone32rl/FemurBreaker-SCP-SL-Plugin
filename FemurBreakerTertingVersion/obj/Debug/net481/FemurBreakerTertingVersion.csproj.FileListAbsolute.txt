@@ -17,7 +17,6 @@ C:\Users\david\source\repos\FemurBreakerTertingVersion\FemurBreakerTertingVersio
 C:\Users\david\source\repos\FemurBreakerTertingVersion\FemurBreakerTertingVersion\bin\Debug\net481\MapEditorReborn.dll
 C:\Users\david\source\repos\FemurBreakerTertingVersion\FemurBreakerTertingVersion\bin\Debug\net481\Mirror.dll
 C:\Users\david\source\repos\FemurBreakerTertingVersion\FemurBreakerTertingVersion\bin\Debug\net481\SCPSLAudioApi.dll
-C:\Users\david\source\repos\FemurBreakerTertingVersion\FemurBreakerTertingVersion\bin\Debug\net481\SemanticVersioning.dll
 C:\Users\david\source\repos\FemurBreakerTertingVersion\FemurBreakerTertingVersion\bin\Debug\net481\UnityEngine.CoreModule.dll
 C:\Users\david\source\repos\FemurBreakerTertingVersion\FemurBreakerTertingVersion\bin\Debug\net481\UnityEngine.PhysicsModule.dll
 C:\Users\david\source\repos\FemurBreakerTertingVersion\FemurBreakerTertingVersion\obj\Debug\net481\FemurBreakerTertingVersion.csproj.AssemblyReference.cache
