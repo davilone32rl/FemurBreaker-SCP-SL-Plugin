@@ -12,6 +12,7 @@
     using System.Net.Http.Headers;
     using System.Threading;
     using MEC;
+    using MapGeneration.Distributors;
 
     public class EventHandlers
     {
@@ -40,24 +41,56 @@
 
                 if (playerAlive == 1)
                 {
-                    if (Random.Range(1, 101) > plugin.Config.porcent)
+                    if (plugin.Config.UseGenerators)
                     {
-                        // Falla la retención
-                        playerAlive = 0;
-                        ev.Player.Broadcast(4, plugin.Config.OnFailure);
+                        if (Generator.Get(Exiled.API.Enums.GeneratorState.Activating).Count() == plugin.Config.Generators)
+                        {
+                            if (Random.Range(1, 101) > plugin.Config.porcent)
+                            {
+                                // Falla la retención
+                                playerAlive = 0;
+                                ev.Player.Broadcast(4, plugin.Config.OnFailure);
+                            }
+                            else
+                            {
+                                // Retención exitosa
+                                playerAlive = 3;
+                                ev.Player.Broadcast(4, plugin.Config.OnDeath);
+                                List<Player> scp106 = Player.List.Where(p => p.Role == RoleTypeId.Scp106).ToList();
+                                if (scp106 != null)
+                                {
+                                    foreach (Player player in scp106) { player.Kill(plugin.Config.OnRecontainmentDeath, "SCP-106 successfully terminated. Termination cause Recontainment"); }
+                                    Extension(plugin.Config.npc);
+                                }
+                            }
+                        }
+                        else
+                        {
+                            ev.Player.Broadcast(4, $"{plugin.Config.TextGenerators}" + $"{Generator.Get(Exiled.API.Enums.GeneratorState.Activating).Count()} / {plugin.Config.Generators}");
+                        }
                     }
                     else
                     {
-                        // Retención exitosa
-                        playerAlive = 3;
-                        ev.Player.Broadcast(4, plugin.Config.OnDeath);
-                        List<Player> scp106 = Player.List.Where(p => p.Role == RoleTypeId.Scp106).ToList();
-                        if (scp106 != null)
+                        if (Random.Range(1, 101) > plugin.Config.porcent)
                         {
-                            foreach (Player player in scp106) { player.Kill(plugin.Config.OnRecontainmentDeath, "SCP-106 successfully terminated. Termination cause Recontainment"); }
-                            Extension(plugin.Config.npc);
+                            // Falla la retención
+                            playerAlive = 0;
+                            ev.Player.Broadcast(4, plugin.Config.OnFailure);
+                        }
+                        else
+                        {
+                            // Retención exitosa
+                            playerAlive = 3;
+                            ev.Player.Broadcast(4, plugin.Config.OnDeath);
+                            List<Player> scp106 = Player.List.Where(p => p.Role == RoleTypeId.Scp106).ToList();
+                            if (scp106 != null)
+                            {
+                                foreach (Player player in scp106) { player.Kill(plugin.Config.OnRecontainmentDeath); }
+                                Extension(plugin.Config.npc);
+                            }
                         }
                     }
+
 
                 }
                 else

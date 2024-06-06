@@ -33,9 +33,15 @@
         public float seconds { get; set; } = 33f;
         [Description("Activate this if you want a cassie to say when someone sacrifices")]
         public bool CassieWithSacrificie { get; set; } = true;
-        [Description("Sound or not sound")]
+        [Description("UseCassie")]
         public bool SoundOrNotsound { get; set; } = true;
-        [Description("Sound or not sound")]
+        [Description("Cassie sound when 106 holds back (You will need to have \"UseCassie\" disabled)")]
         public string Cassie { get; set; } = "SCP 1 0 6 HAS BEEN SUCCEFULY RECOTIANETD BY FEMUR BREAKER";
+        [Description("Use generators")]
+        public bool UseGenerators { get; set; } = false;
+        [Description("How many generators so that it can be activated")]
+        public int Generators { get; set; } = 3;
+        [Description("How many generators so that it can be activated")]
+        public string TextGenerators { get; set; } = "Generators: ";
     }
 }
