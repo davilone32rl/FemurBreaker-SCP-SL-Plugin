@@ -9,10 +9,8 @@
     using System.Linq;
     using Exiled.Events.EventArgs.Server;
     using SCPSLAudioApi.AudioCore;
-    using System.Net.Http.Headers;
-    using System.Threading;
     using MEC;
-    using MapGeneration.Distributors;
+    using AudioPlayer.API;
 
     public class EventHandlers
     {
@@ -29,7 +27,7 @@
                     playerAlive = 1;
                     if (plugin.Config.CassieWithSacrificie)
                     {
-                        ev.Player.Kill(plugin.Config.OnSacrificeDeathReason, "A player sacrificed himself for the recontainment of scp 106");
+                        ev.Player.Kill(plugin.Config.OnSacrificeDeathReason, plugin.Config.CassieAnounceWhitPlayerDead);
                     }
                     else
                     {
@@ -47,19 +45,17 @@
                         {
                             if (Random.Range(1, 101) > plugin.Config.porcent)
                             {
-                                // Falla la retención
                                 playerAlive = 0;
                                 ev.Player.Broadcast(4, plugin.Config.OnFailure);
                             }
                             else
                             {
-                                // Retención exitosa
                                 playerAlive = 3;
                                 ev.Player.Broadcast(4, plugin.Config.OnDeath);
                                 List<Player> scp106 = Player.List.Where(p => p.Role == RoleTypeId.Scp106).ToList();
                                 if (scp106 != null)
                                 {
-                                    foreach (Player player in scp106) { player.Kill(plugin.Config.OnRecontainmentDeath, "SCP-106 successfully terminated. Termination cause Recontainment"); }
+                                    foreach (Player player in scp106) { player.Kill(plugin.Config.OnRecontainmentDeath, plugin.Config.OnDeath); }
                                     Extension(plugin.Config.npc);
                                 }
                             }
@@ -73,13 +69,11 @@
                     {
                         if (Random.Range(1, 101) > plugin.Config.porcent)
                         {
-                            // Falla la retención
                             playerAlive = 0;
                             ev.Player.Broadcast(4, plugin.Config.OnFailure);
                         }
                         else
                         {
-                            // Retención exitosa
                             playerAlive = 3;
                             ev.Player.Broadcast(4, plugin.Config.OnDeath);
                             List<Player> scp106 = Player.List.Where(p => p.Role == RoleTypeId.Scp106).ToList();
@@ -95,7 +89,6 @@
                 }
                 else
                 {
-                    // El jugador no ha interactuado con el primer botón
                     if (playerAlive == 3)
                     {
                         ev.Player.Broadcast(4, plugin.Config.OnRecontainmentRepeat);
@@ -114,16 +107,16 @@
             {
                 if (YT)
                 {
-                    var path = System.IO.Path.Combine(Paths.Plugins, "Audio", "FemurSound.ogg");
-                    var npc = Npc.Spawn(plugin.Config.OnNameBot, RoleTypeId.Overwatch);
-                    npc.RemoteAdminPermissions = PlayerPermissions.AFKImmunity;
-                    var audio = AudioPlayerBase.Get(npc.ReferenceHub);
+                    var path = System.IO.Path.Combine(Paths.Plugins, "Audio", plugin.Config.FileAudioName + ".ogg");
+                    var npc = AudioPlayer.Other.Extensions.SpawnDummy(name: plugin.Config.OnNameBot, id: 99, badgetext: plugin.Config.BotBadgetName, bagdecolor: plugin.Config.BadgetBotColor);
+                    npc.hubPlayer.roleManager.ServerSetRole(RoleTypeId.Overwatch, RoleChangeReason.Died);
+                    var audio = AudioPlayerBase.Get(npc.hubPlayer);
                     audio.BroadcastChannel = VoiceChat.VoiceChatChannel.Intercom;
                     audio.AudioToPlay.Add(path);
                     audio.Play(0);
                     Timing.CallDelayed(plugin.Config.seconds, () =>
                     {
-                        npc.Destroy();
+                        AudioController.DisconnectDummy(npc.BotID);
                     });
                 }
                 else
@@ -133,7 +126,7 @@
             }
             else
             {
-                Cassie.Message("SCP 1 0 6 HAS BEEN SUCCEFULY RECOTIANETD BY FEMUR BREAKER!");
+                Cassie.Message(plugin.Config.Cassie);
             }
         }
 

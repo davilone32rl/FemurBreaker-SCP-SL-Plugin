@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\david\\source\\repos\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj": {}
+    "C:\\Users\\davil\\Documents\\GitHub\\FemurBreaker-SCP-SL-Plugin\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\david\\source\\repos\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj": {
+    "C:\\Users\\davil\\Documents\\GitHub\\FemurBreaker-SCP-SL-Plugin\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\david\\source\\repos\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj",
+        "projectUniqueName": "C:\\Users\\davil\\Documents\\GitHub\\FemurBreaker-SCP-SL-Plugin\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj",
         "projectName": "FemurBreaker",
-        "projectPath": "C:\\Users\\david\\source\\repos\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj",
-        "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\david\\source\\repos\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion\\obj\\",
+        "projectPath": "C:\\Users\\davil\\Documents\\GitHub\\FemurBreaker-SCP-SL-Plugin\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj",
+        "packagesPath": "C:\\Users\\davil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\davil\\Documents\\GitHub\\FemurBreaker-SCP-SL-Plugin\\FemurBreakerTertingVersion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\davil\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -52,11 +52,17 @@
           "dependencies": {
             "EXILED": {
               "target": "Package",
-              "version": "[8.9.2, )"
+              "version": "[8.9.11, )"
             },
             "Microsoft.CSharp": {
               "target": "Package",
               "version": "[4.7.0, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
             },
             "System.ComponentModel.Annotations": {
               "target": "Package",
@@ -67,7 +73,7 @@
               "version": "[4.5.0, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "KHVya+Zf4po=",
+  "dgSpecHash": "JUkkqdE+nDQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\david\\source\\repos\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj",
+  "projectFilePath": "C:\\Users\\davil\\Documents\\GitHub\\FemurBreaker-SCP-SL-Plugin\\FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\david\\.nuget\\packages\\exiled\\8.9.2\\exiled.8.9.2.nupkg.sha512",
-    "C:\\Users\\david\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\david\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
-    "C:\\Users\\david\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+    "C:\\Users\\davil\\.nuget\\packages\\exiled\\8.9.11\\exiled.8.9.11.nupkg.sha512",
+    "C:\\Users\\davil\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\davil\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\davil\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net481\\1.0.3\\microsoft.netframework.referenceassemblies.net481.1.0.3.nupkg.sha512",
+    "C:\\Users\\davil\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\davil\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

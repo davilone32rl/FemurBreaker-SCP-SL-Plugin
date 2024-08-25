@@ -15,6 +15,8 @@
         public string OnFailure { get; set; } = "!The recontainment of scp 106 has failed! Find another person for recontainment¡";
         [Description("OnDeath")]
         public string OnDeath { get; set; } = "SCP-106 has been successfully recontained!";
+        [Description("Announcement that Cassie makes when a player restrains himself from killing 106")]
+        public string CassieAnounceWhitPlayerDead = "A player sacrificed himself for the recontainment of scp 106";
         [Description("OnRecontainmentDeath")]
         public string OnRecontainmentDeath { get; set; } = "recontained!";
         [Description("OnRecontainmentRepeat")]
@@ -43,5 +45,13 @@
         public int Generators { get; set; } = 3;
         [Description("How many generators so that it can be activated")]
         public string TextGenerators { get; set; } = "Generators: ";
+        [Description("The bot id")]
+        public int BotId = 99;
+        [Description("The bot badget name")]
+        public string BotBadgetName = "C.A.S.S.I.E";
+        [Description("The bot id")]
+        public string BadgetBotColor = "orange";
+        [Description("The file name (The audio must be in ogg format.)")]
+        public string FileAudioName = "FemurSound";
     }
 }
