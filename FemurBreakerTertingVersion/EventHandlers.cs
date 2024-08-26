@@ -55,7 +55,9 @@
                                 List<Player> scp106 = Player.List.Where(p => p.Role == RoleTypeId.Scp106).ToList();
                                 if (scp106 != null)
                                 {
-                                    foreach (Player player in scp106) { player.Kill(plugin.Config.OnRecontainmentDeath, plugin.Config.OnDeath); }
+                                    foreach (Player player in scp106) {
+                                        player.Hurt(9999, Exiled.API.Enums.DamageType.FemurBreaker);
+                                    }
                                     Extension(plugin.Config.npc);
                                 }
                             }
