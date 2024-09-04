@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\davil\\Documents\\GitHub\\FemurBreaker-SCP-SL-Plugin\\",
+  "WorkspaceRootPath": "C:\\Users\\davil\\source\\repos\\FemurBreaker-SCP-SL-Plugin-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B2B74FF-F0AB-4927-B3FF-5B693CA47C6E}|FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj|c:\\users\\davil\\documents\\github\\femurbreaker-scp-sl-plugin\\femurbreakertertingversion\\eventhandlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5B2B74FF-F0AB-4927-B3FF-5B693CA47C6E}|FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj|c:\\users\\davil\\source\\repos\\femurbreaker-scp-sl-plugin-main\\femurbreakertertingversion\\eventhandlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B2B74FF-F0AB-4927-B3FF-5B693CA47C6E}|FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj|solutionrelative:femurbreakertertingversion\\eventhandlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2B74FF-F0AB-4927-B3FF-5B693CA47C6E}|FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj|c:\\users\\davil\\source\\repos\\femurbreaker-scp-sl-plugin-main\\femurbreakertertingversion\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2B74FF-F0AB-4927-B3FF-5B693CA47C6E}|FemurBreakerTertingVersion\\FemurBreakerTertingVersion.csproj|solutionrelative:femurbreakertertingversion\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +18,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Config.cs",
+              "DocumentMoniker": "C:\\Users\\davil\\source\\repos\\FemurBreaker-SCP-SL-Plugin-main\\FemurBreakerTertingVersion\\Config.cs",
+              "RelativeDocumentMoniker": "FemurBreakerTertingVersion\\Config.cs",
+              "ToolTip": "C:\\Users\\davil\\source\\repos\\FemurBreaker-SCP-SL-Plugin-main\\FemurBreakerTertingVersion\\Config.cs",
+              "RelativeToolTip": "FemurBreakerTertingVersion\\Config.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAC4AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T14:51:52.84Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "EventHandlers.cs",
-              "DocumentMoniker": "C:\\Users\\davil\\Documents\\GitHub\\FemurBreaker-SCP-SL-Plugin\\FemurBreakerTertingVersion\\EventHandlers.cs",
+              "DocumentMoniker": "C:\\Users\\davil\\source\\repos\\FemurBreaker-SCP-SL-Plugin-main\\FemurBreakerTertingVersion\\EventHandlers.cs",
               "RelativeDocumentMoniker": "FemurBreakerTertingVersion\\EventHandlers.cs",
-              "ToolTip": "C:\\Users\\davil\\Documents\\GitHub\\FemurBreaker-SCP-SL-Plugin\\FemurBreakerTertingVersion\\EventHandlers.cs",
+              "ToolTip": "C:\\Users\\davil\\source\\repos\\FemurBreaker-SCP-SL-Plugin-main\\FemurBreakerTertingVersion\\EventHandlers.cs",
               "RelativeToolTip": "FemurBreakerTertingVersion\\EventHandlers.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowC0AAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T23:46:50.857Z",
               "EditorCaption": ""

@@ -18,8 +18,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,7 +32,7 @@
               "RelativeDocumentMoniker": "FemurBreakerTertingVersion\\Config.cs",
               "ToolTip": "C:\\Users\\davil\\Documents\\GitHub\\FemurBreaker-SCP-SL-Plugin\\FemurBreakerTertingVersion\\Config.cs",
               "RelativeToolTip": "FemurBreakerTertingVersion\\Config.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAACgAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-26T14:51:52.84Z",
               "EditorCaption": ""
@@ -41,7 +45,7 @@
               "RelativeDocumentMoniker": "FemurBreakerTertingVersion\\EventHandlers.cs",
               "ToolTip": "C:\\Users\\davil\\Documents\\GitHub\\FemurBreaker-SCP-SL-Plugin\\FemurBreakerTertingVersion\\EventHandlers.cs",
               "RelativeToolTip": "FemurBreakerTertingVersion\\EventHandlers.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAABkAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAQwDoAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T23:46:50.857Z",
               "EditorCaption": ""
